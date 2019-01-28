@@ -48,8 +48,8 @@ module.exports.datastores = {
     *    (See https://sailsjs.com/config/datastores for help.)                 *
     *                                                                          *
     ***************************************************************************/
-    adapter: require('sails-mysql'),
-    url: 'mysql://root:password@127.0.0.3:3306/SanRemo',
+    adapter: 'sails-mysql',
+    url: 'mysql://root@127.0.0.1:3306/sanremo',
 
   },
 

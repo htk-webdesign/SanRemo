@@ -47,8 +47,8 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     default: {
-      adapter: require('sails-mysql'),
-      url: 'mysql://root:password@127.0.0.3:3306/SanRemo',
+      adapter: 'sails-mysql',
+      url: 'mysql://root@127.0.0.1:3306/sanremo',
       //--------------------------------------------------------------------------
       //  /\   To avoid checking it in to version control, you might opt to set
       //  ||   sensitive credentials like `url` using an environment variable.
@@ -90,7 +90,7 @@ module.exports = {
     * https://sailsjs.com/docs/concepts/models-and-orm/model-settings#?migrate *
     *                                                                          *
     ***************************************************************************/
-    migrate: 'alter',
+    migrate: 'secure',
 
     /***************************************************************************
     *                                                                          *
